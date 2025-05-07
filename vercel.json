@@ -15,5 +15,7 @@
             "src": "/get-credentials",
             "dest": "/api/get-credentials.js"
         }
-    ]
+    ],
+    "rewrites": [{ "source": "/(.*)", "destination": "/" }] 
+
 }
