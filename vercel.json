@@ -1,0 +1,19 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "api/*/.js",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/submit-credentials",
+            "dest": "/api/submit-credentials.js"
+        },
+        {
+            "src": "/get-credentials",
+            "dest": "/api/get-credentials.js"
+        }
+    ]
+}
